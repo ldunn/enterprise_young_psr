@@ -1,0 +1,54 @@
+PSRJ           FAKE
+RAJ            8.588793237055555           
+DECJ           -45.177041255555565         
+F0             11.185441310549984806     1  7.980504852483063262e-13 
+F1             -1.5516899047678853761e-11 1  2.0888866677775645989e-20
+F2             0                           
+PEPOCH         58474                       
+POSEPOCH       58474                       
+DMEPOCH        58474                       
+DM             67.989999999999999998       
+GLEP_3         57734.485499999999998       
+GLEP_4         58515                       
+GLEP_5         59417.210799999999999       
+GLPH_3         -0.016858298273595187814    
+GLPH_4         14.011627559354488781     1  0.00002295059773463411   
+GLF0_3         1.6011166546974071245e-05   
+GLF0_4         2.7999891771027272876e-05 1  0.00000000000119324749   
+GLF1_3         -9.4488399211756969094e-14   
+GLF1_4         1.6337748037177636759e-14 1  2.8923353579366062538e-20
+GLF0D_3        2.0062462084722272985e-06   
+GLF0D_4        1.5999999999999999276e-06   
+GLTD_3         0.23840845595912694144      
+GLTD_4         15.800000000000000711       
+START          57755.656237670821501       
+FINISH         59380.21029978169787        
+TRACK          -2                          
+TZRMJD         59385.308976498226023       
+TZRFRQ         835.55102499999998145    
+TZRSITE        mo   
+TRES           3172398.771   
+EPHVER         5                           
+DMASSPLANET1   0                           
+DMASSPLANET2   0                           
+DMASSPLANET3   0                           
+DMASSPLANET4   0                           
+DMASSPLANET5   0                           
+DMASSPLANET6   0                           
+DMASSPLANET7   0                           
+DMASSPLANET8   0                           
+DMASSPLANET9   0                           
+NE_SW          4                           
+CLK            TT(TAI)
+MODE 1
+UNITS          TCB
+TIMEEPH        IF99
+DILATEFREQ     Y
+PLANET_SHAPIRO Y
+T2CMETHOD      IAU2000B
+CORRECT_TROPOSPHERE  Y
+EPHEM          DE430
+NITS           1
+NTOA           0
+CHI2R          -nan 0
+JUMP TEL mons 0.00015567731165738 0
