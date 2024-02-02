@@ -40,7 +40,9 @@ plt.rcParams['figure.facecolor'] = 'white'
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--psrj', type=str)
-parser.add_argument('--tim', type=str)
+parser.add_argument('--in-par', type=str)
+parser.add_argument('--in-tim', type=str)
+parser.add_argument('--model', type=str)
 parser.add_argument('--results-dir', type=str)
 parser.add_argument('--par-in-dir', type=str)
 parser.add_argument('--par-out-dir', type=str)
@@ -54,7 +56,10 @@ args = parser.parse_args()
 
 results_dir=args.results_dir
 
-model = results_dir.split("/")[-1]
+if args.model is None:
+    model = results_dir.split("/")[-1]
+else:
+    model = args.model
 
 burn_frac = 0.5
 
@@ -66,11 +71,16 @@ else:
 
 
 psrj = args.psrj
-par = f"{args.par_in_dir}/{psrj}.par"
-if args.tim is None:
+
+if args.in_par is None:
+    par = f"{args.par_in_dir}/{psrj}.par"
+else:
+    par = args.in_par
+
+if args.in_tim is None:
     tim = f"pn_tims/{psrj}.tim"
 else:
-    tim = args.tim
+    tim = args.in_tim
 
 psr = Pulsar(par, tim, drop_t2pulsar=False)
 
